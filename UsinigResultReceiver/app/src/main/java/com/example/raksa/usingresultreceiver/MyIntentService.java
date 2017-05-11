@@ -25,7 +25,6 @@ public class MyIntentService extends IntentService {
         int Result = 500 + 5;
 
         ResultReceiver myResultReceiver = intent.getExtras().getParcelable("receiver");
-        TextView resultTextView = (TextView) intent.getExtras().getParcelable("resultTextView");
 
         Bundle bundle = new Bundle();
         bundle.putInt("result",Result);
